@@ -4,28 +4,14 @@ Aplicación backend Java (Spring Boot) que simula un sistema bancario simple de 
 
 > Esta app **no es el entregable principal** del PAE — es el "laboratorio" necesario para validar que la herramienta de generación de tráfico sintético funciona correctamente.
 
-## Contexto del proyecto
-
-Este repositorio forma parte de **Synthetic Traffic Generation Engine**, un PAE en colaboración con **it now** (Kyndryl & CaixaBank), supervisado por Josep Pegueroles y Juanjo Costa.
-
-Estructura general del monorepo:
-
-```
-proyecto/
-├── java-app/            ← ESTA CARPETA (app objetivo backend)
-├── ai-orchestrator/      (análisis de logs + .jar → generación de planes JMeter)
-├── kubernetes/           (despliegue del laboratorio)
-└── docs/
-```
-
 ## Stack técnico
 
-- **Java 17**
-- **Spring Boot 3.x**
-- **Maven**
-- **H2** (base de datos en memoria, para simplificar el despliegue en Kubernetes)
-- **Lombok**
-- **Spring Boot Actuator**
+- **Java 25**   REVISAR SI QUEREMOS PONER LA 21
+- **Spring Boot 3.x** : Framework (conjunto de herramientas ya hechas) para construir aplicaciones Java más rápido (servidor web, conexión a base de datos, manejo de peticiones HTTP...).
+- **Maven** : Herramienta de gestión de dependencias y construcción del proyecto.
+- **H2** : Base de datos muy ligera que vive en memoria
+- **Lombok** : Librería que te ahorra código repetitivo en Java
+- **Spring Boot Actuator** : Genera automáticamente con una simple anotación (@Data, por ejemplo) getters, setters, constructores...
 
 ## Dominio de la aplicación
 
