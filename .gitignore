@@ -1,0 +1,23 @@
+# Java compilados y bytecode
+*.class
+*.jar
+*.war
+target/
+.mvn/
+
+# Python y entornos virtuales
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Archivos de ejecucion y logs
+*.log
+*.jmx
+*.csv
+
+# IDEs y SO
+.vscode/
+.idea/
+.DS_Store
